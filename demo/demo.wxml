@@ -1,0 +1,3 @@
+<view class="share-image-wrap">
+    <canvas class="share-canvas" type="2d" canvas-id="test_canvas" id="test_canvas" style="background-color:#ccc;"></canvas>
+</view>

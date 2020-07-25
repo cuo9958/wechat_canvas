@@ -1,0 +1,13 @@
+.share-image-wrap {
+    width: 750rpx;
+    height: 100%;
+    background-color: #00000099;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    overflow: hidden;
+}
+.share-canvas {
+    width: 750rpx;
+    height: 1200rpx;
+}
