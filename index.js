@@ -530,11 +530,18 @@ class Cir1D extends DisObject {
  * @param {*} id id
  * @param {*} w 宽
  * @param {*} h 高
+ * @param {*} self 自定义组件需要传递的值
  */
-async function Engine(id, w, h) {
+async function Engine(id, w, h,self) {
     if (Utils.has2D()) {
         return new Promise((resolve) => {
-            const query = wx.createSelectorQuery();
+            let query
+            if(self){
+                query = self.createSelectorQuery();
+            }else{
+                query = wx.createSelectorQuery();
+            }
+            
             query
                 .select("#" + id)
                 .node()
